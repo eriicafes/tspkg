@@ -1,3 +1,5 @@
+import { getEcho } from "./lib";
+
 export function echo() {
-    console.log("echoes sup!")
+    console.log(`echoes ${getEcho()}!`)
 }

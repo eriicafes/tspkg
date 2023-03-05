@@ -4,13 +4,17 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm"
+    "watch": "vitest",
+    "test": "vitest run",
+    "check": "tsc",
+    "build": "rm -rf dist && tsup src/index.ts --format cjs,esm --dts"
   },
   "keywords": [],
   "author": "Eric Afes",
   "license": "ISC",
   "devDependencies": {
     "tsup": "^6.6.3",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "vitest": "^0.29.2"
   }
 }
